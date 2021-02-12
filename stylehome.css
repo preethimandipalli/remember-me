@@ -1,0 +1,26 @@
+#startbutton{
+
+    margin-left: 45%;
+    margin-top: 25%;
+    width: 175px;
+    height:55px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgba(183, 247, 241, 0.788);
+    
+
+}
+ body{
+      background-image: url("assets/backgroundhomescreen.png");
+      background-repeat: no-repeat;
+      background-size: 100% 250%;
+}
+h1{
+   text-align: center;
+   font-size: 4em;
+   font-weight: 800;
+   color: white;
+   margin-top: 100px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+      

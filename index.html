@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "app.js"></script>
+</head>
+<body>
+    <div id = "timer">
+
+        <div id="timeleft">
+            TIME LEFT  : 
+        </div>
+        <div id="counter"></div>
+
+    </div>
+    
+    <div id="grid">
+       <script>
+            var x = getRandomImages();
+            var images=x[1];
+            var indexofimages=x[0];
+            sessionStorage.setItem( 'originalImageUrls', images);
+            sessionStorage.setItem('indexofimages',indexofimages);
+        </script>
+        
+        <div class="cell">
+            <img id = "img1" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img1");
+                obj.src = images[0];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img2" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img2");
+                obj.src = images[1];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img3" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img3");
+                obj.src = images[2];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img4" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img4");
+                obj.src = images[3];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img5" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img5");
+                obj.src = images[4];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img6" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img6");
+                obj.src = images[5];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img7" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img7");
+                obj.src = images[6];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img8" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img8");
+                obj.src = images[7];
+            </script>
+        </div>
+        <div class="cell">
+            <img id = "img9" src= "" alt="" width="170px" height="170px" >
+            <script>
+                var obj = document.getElementById("img9");
+                obj.src = images[8];
+            </script>
+        </div>
+        <script>
+            function redirectpage(){
+    
+                window.location="file:///Users/vinodkumarreddy/Desktop/remember-me/screen2.html";
+            }
+            var sec=3;
+            function Timer(){
+                sec-=1;
+                document.getElementById("counter").innerHTML= sec;
+        }
+            setInterval(Timer,1000);
+    
+            setTimeout('redirectpage()',3000);
+    
+        </script>
+       
+    </div>
+       
+    
+</body>
+</html>

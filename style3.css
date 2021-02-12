@@ -1,0 +1,32 @@
+#grid {
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto;
+    height: 175px;
+    justify-content: center;
+    box-shadow:rgb(71, 66, 66);
+
+  }
+  #grid2{
+    display: grid;
+    height: 100px;
+    width:100px;
+    grid-template-columns:auto auto auto;
+    margin-left: 40%;
+    margin-top: 13%;
+  
+
+  }
+  .dropzone{
+    
+    display: inline-block;
+    height: 100px;
+    width:100px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  
+  }
+ .cell{
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  
+ }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src = "ind.js"></script>
+</head>
+<body>
+    <div id="grid">
+        <script>
+            var strOfImages = sessionStorage['originalImageUrls'];
+            var images=strOfImages.split(",");
+            images.sort();
+        
+           console.log(typeof images);
+        </script>
+        <div class="cell" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+            <img id = "img1" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img1");
+                obj.src = images[0];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img2" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img2");
+                obj.src = images[1];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img3" src= "" alt="" width="100px" height="100px"  ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img3");
+                obj.src = images[2];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img4" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img4");
+                obj.src = images[3];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img5" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img5");
+                obj.src = images[4];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img6" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img6");
+                obj.src = images[5];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img7" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img7");
+                obj.src = images[6];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img8" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img8");
+                obj.src = images[7];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img9" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img9");
+                obj.src = images[8];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img10" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img10");
+                obj.src = images[9];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img11" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img11");
+                obj.src = images[10];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img12" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img12");
+                obj.src = images[11];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img13" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img13");
+                obj.src = images[12];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img14" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img14");
+                obj.src = images[13];
+            </script>
+        </div>
+        <div class="cell" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <img id = "img15" src= "" alt="" width="100px" height="100px" ondragstart="dragStart(event)" draggable="true">
+            <script>
+                var obj = document.getElementById("img15");
+                obj.src = images[14];
+            </script>
+        </div>
+    </div>
+    <div id ="grid2">
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,1)">
+        </div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,2)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,3)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,4)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,5)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,6)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,7)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,8)"></div>
+        <div class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event,9)"></div>
+    </div> 
+   
+    <div>
+        <button id = "submitbutton" onclick="navigate()"><b>SUBMIT</b></button>
+    </div>
+
+</body>
+</html>
